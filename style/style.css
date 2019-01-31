@@ -90,6 +90,7 @@ body {
 .header .header-content h1 {
   font-size: 56px;
   font-weight: 700;
+  margin: 0;
 }
 
 .header .header-content span {
