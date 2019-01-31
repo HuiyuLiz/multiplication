@@ -5,6 +5,7 @@ span,
 ul,
 li,
 p,
+h1,
 footer,
 header {
   margin: 0;
@@ -88,6 +89,7 @@ body {
 
 .header .header-content h1 {
   font-size: 56px;
+  font-weight: 700;
 }
 
 .header .header-content span {
