@@ -24,7 +24,7 @@
         <div class="card" v-for="i in array">
           <ul class="list">
             <span class="card-title">{{i}}</span>
-            <li v-for="j in 9">{{i}} X {{j}} = {{i*j}}</li>
+            <li v-for="j in (array.length+1)">{{i}} X {{j}} = {{i*j}}</li>
           </ul>
         </div>
       </div>
