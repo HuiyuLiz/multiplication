@@ -1,17 +1,23 @@
-$primary-color: #2eb738;
-* {
+html,body,div,span,ul,li,footer,header {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+$primary-color: #2eb738;
 body {
   background-color: #f0f0f0;
   font-family: "Helvetica", Microsoft JhengHei;
+  width: 100%;
 }
 
 .container {
   display: flex;
-  width: 1110px;
+  max-width: 1110px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 80px;
 }
@@ -19,7 +25,7 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -55,7 +61,6 @@ body {
   .header-content {
     h1 {
       font-size: 56px;
-      font-family: "微軟正黑體";
     }
     span {
       font-size: 24px;
@@ -105,8 +110,20 @@ footer {
   background-color: $primary-color;
   line-height: 34px;
   text-align: right;
-  color: white; // margin-top: 80px;
+  color: white;
   .container {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  footer {
+    .container {
+      justify-content: center;
+    }
   }
 }
