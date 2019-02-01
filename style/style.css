@@ -19,7 +19,18 @@ header {
 body {
   background-color: #f0f0f0;
   font-family: "Helvetica", Microsoft JhengHei;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
+}
+
+#app {
+  margin-top: 80px;
 }
 
 .container {
@@ -29,7 +40,6 @@ body {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 80px;
 }
 
 .cards {
@@ -161,6 +171,7 @@ footer {
   line-height: 34px;
   text-align: right;
   color: white;
+  margin-top: 80px;
 }
 
 footer p {
@@ -173,7 +184,7 @@ footer .container {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .cards {
     margin-left: 0px;
     margin-right: 0px;

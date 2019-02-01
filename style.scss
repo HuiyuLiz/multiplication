@@ -20,15 +20,18 @@ $primary-color: #2eb738;
 body {
   background-color: #f0f0f0;
   font-family: "Helvetica", Microsoft JhengHei;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
-
+#app {
+  margin-top: 80px;
+}
 .container {
   display: flex;
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 80px;
 }
 
 .cards {
@@ -122,6 +125,7 @@ footer {
   line-height: 34px;
   text-align: right;
   color: white;
+  margin-top: 80px;
   p {
     font-size: 16px;
   }
@@ -130,7 +134,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .cards {
     margin-left: 0px;
     margin-right: 0px;
