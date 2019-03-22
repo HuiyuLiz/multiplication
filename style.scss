@@ -90,7 +90,7 @@ body {
   margin: 15px 0;
   border-top-left-radius: 25%;
   border-bottom-right-radius: 10%;
-  padding: 65px 40px 60px 40px;
+  padding: 70px 42px 70px 42px;
   box-sizing: border-box;
   flex-direction: column;
   box-shadow: 0px 3px 10px #d8d8d8;
@@ -98,29 +98,31 @@ body {
   .card-title {
     font-size: 128px;
     font-weight: bold;
-    color: #2eb738;
+    color: $primary-color;
     text-shadow: 4px 3px #f0f0f0;
     text-align: center;
-    height: 145px;
-    margin-top: -25px;
+    height: 138px;
+    margin-top: -40px;
+    padding-bottom: 20px;
   }
   .list {
     display: flex;
+    height: 230px;
     flex-direction: column;
     flex-grow: 100px;
     flex-wrap: wrap;
     font-size: 1.5rem;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: space-between;
   }
   li {
     color: $primary-color;
     letter-spacing: 0.5px;
-    line-height: 40px;
+    line-height: 37px;
+    padding-bottom: 2px;
   }
 }
-
 footer {
   background-color: $primary-color;
   line-height: 34px;
@@ -134,7 +136,6 @@ footer {
     justify-content: flex-end;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .cards {
     justify-content: center;
@@ -151,7 +152,6 @@ footer {
     }
   }
 }
-
 @media (max-width: 576px) {
   .head {
     max-width: 80%;
