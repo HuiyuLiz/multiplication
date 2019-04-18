@@ -18,6 +18,7 @@ header {
 }
 
 $primary-color: #2eb738;
+
 body {
   background-color: #f0f0f0;
   font-family: "Helvetica", Microsoft JhengHei;
@@ -52,18 +53,21 @@ body {
   align-items: center;
   color: $primary-color;
   margin: 30px 0px;
+
   .header-line {
     display: block;
     height: 1px;
     width: 282px;
     position: relative;
     background-color: $primary-color;
+
     &::after {
       position: absolute;
       content: "X";
       left: -30px;
       top: -7px;
     }
+
     &::before {
       position: absolute;
       content: "X";
@@ -71,12 +75,14 @@ body {
       top: -7px;
     }
   }
+
   .header-content {
     h1 {
       font-size: 56px;
       font-weight: 700;
       margin: 0;
     }
+
     span {
       font-size: 24px;
     }
@@ -87,7 +93,7 @@ body {
   display: flex;
   width: 350px;
   height: 366px;
-  margin: 0px 0 40px 0;
+  margin: 10px 0 30px 0;
   border-top-left-radius: 25%;
   border-bottom-right-radius: 10%;
   padding: 70px 42px 70px 42px;
@@ -95,6 +101,7 @@ body {
   flex-direction: column;
   box-shadow: 0px 3px 10px #d8d8d8;
   background-color: white;
+
   .card-title {
     font-size: 128px;
     font-weight: bold;
@@ -104,6 +111,7 @@ body {
     height: 138px;
     margin-top: -40px;
     position: relative;
+
     > span {
       position: absolute;
       top: 60px;
@@ -111,6 +119,7 @@ body {
       width: 100%;
     }
   }
+
   .list {
     display: flex;
     height: 230px;
@@ -122,6 +131,7 @@ body {
     justify-content: flex-end;
     align-content: space-between;
   }
+
   li {
     color: $primary-color;
     letter-spacing: 0.5px;
@@ -129,39 +139,48 @@ body {
     padding-bottom: 2px;
   }
 }
+
 footer {
   background-color: $primary-color;
   line-height: 34px;
   text-align: right;
   color: white;
   margin-top: 80px;
+
   p {
     font-size: 16px;
   }
+
   .container {
     justify-content: flex-end;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .cards {
     justify-content: center;
   }
+
   .card {
     margin: 0px 15px 30px 15px;
   }
+
   footer {
     text-align: center;
     padding: 15px 0;
+
     .container {
       flex-direction: column;
       justify-content: center;
     }
   }
 }
+
 @media (max-width: 576px) {
   .head {
     max-width: 80%;
   }
+
   .card {
     flex-basis: calc(100% - 30px);
     margin: 15px 0;
