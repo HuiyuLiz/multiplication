@@ -162,6 +162,10 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+  .header {
+    margin: 30px 15px;
+  }
+
   .cards {
     justify-content: center;
   }
@@ -181,15 +185,12 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header {
     margin: 30px 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .head {
-    max-width: 80%;
+    .header-line {
+      width: 80%;
+    }
   }
 
   .card {
