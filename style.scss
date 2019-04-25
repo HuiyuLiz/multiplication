@@ -101,7 +101,8 @@ body {
   margin: 10px 0 30px 0;
   border-top-left-radius: 25%;
   border-bottom-right-radius: 10%;
-  padding: 70px 42px 70px 42px;
+  padding: 0 40px;
+  justify-content: center;
   box-sizing: border-box;
   flex-direction: column;
   box-shadow: 0px 3px 10px #d8d8d8;
@@ -188,13 +189,14 @@ footer {
 @media (max-width: 576px) {
   .header {
     margin: 30px 15px;
+
     .header-line {
       width: 80%;
     }
   }
 
   .card {
-    width: calc(100% - 30px);
+    width: 80%;
     margin: 15px;
   }
 }
