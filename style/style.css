@@ -230,7 +230,7 @@ footer .container {
 
 @media (max-width: 576px) {
   .header {
-    margin: 30px 15px;
+    margin: 30px 0px;
   }
   .header .header-line {
     width: 80%;
