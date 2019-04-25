@@ -235,9 +235,8 @@ footer .container {
     width: 80%;
   }
   .card {
-    -ms-flex-preferred-size: calc(100% - 30px);
-        flex-basis: calc(100% - 30px);
-    margin: 15px 0;
+    width: calc(100% - 30px);
+    margin: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
