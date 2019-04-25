@@ -56,23 +56,24 @@ body {
 
   .header-line {
     display: block;
-    height: 1px;
+    height: 0.9px;
     width: 282px;
+    font-size: 24px;
     position: relative;
     background-color: $primary-color;
 
     &::after {
       position: absolute;
-      content: "X";
+      content: "×";
       left: -30px;
-      top: -7px;
+      top: -13px;
     }
 
     &::before {
       position: absolute;
-      content: "X";
+      content: "×";
       right: -30px;
-      top: -7px;
+      top: -13px;
     }
   }
 
@@ -106,7 +107,7 @@ body {
     font-size: 128px;
     font-weight: bold;
     color: $primary-color;
-    text-shadow: 4px 3px #f0f0f0;
+    text-shadow: 2px 2px white, 6px 4px #f0f0f0;
     text-align: center;
     height: 138px;
     margin-top: -40px;
